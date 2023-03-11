@@ -1,0 +1,126 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 2rem;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-flow: wrap;
+}
+
+.main-menu {
+  display: flex;
+  color: #d43eb5;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 3em;
+  letter-spacing: 0.1em;
+  transition: background-color 0.5s ease;
+}
+
+.banner a {
+  text-decoration: none;
+  color: #d43eb5;
+  font-weight: 500;
+  font-family: "Big Shoulders Display", cursive;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.main-menu a:hover {
+  border-bottom: 2px solid #edf0ec;
+}
+
+.logo img {
+  display: flex;
+  opacity: 20%;
+}
+
+/* burgermenu */
+.toggle-btn {
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none; /* Skjul knappen som standard */
+}
+
+/*MOBIL*/
+
+@media (max-width: 600px) {
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 2rem;
+  }
+
+  .logo img {
+    width: 15vh;
+    height: auto;
+  }
+
+  .toggle-btn {
+    display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+  }
+
+  .main-menu {
+    display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+  }
+
+  .main-menu ul {
+    display: none; /* Fjern menu-listen som standard */
+  }
+}
+
+/*Tablet*/
+
+@media (max-width: 1000px) {
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 2rem;
+  }
+  .logo {
+    width: 20vh;
+    height: auto;
+  }
+  .toggle-btn {
+    display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+    font-size: 24px;
+  }
+
+  .main-menu {
+    display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+  }
+
+  .main-menu ul {
+    display: none; /* Fjern menu-listen som standard */
+  }
+
+  .main-menu.shown ul {
+    /* Vis menu-listen, når klassen ".shown" er til stede */
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+    text-align: end;
+  }
+}

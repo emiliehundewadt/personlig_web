@@ -1,0 +1,181 @@
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 500;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+.section3_overskrift_contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+/* Mobilversion */
+@media (max-width: 600px) {
+  .section3_overskrift_contact h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+  }
+
+  .grid_contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .venstre_grid {
+    text-align: center;
+  }
+
+  .talk {
+    padding-bottom: 10px;
+  }
+
+  .find {
+    padding-bottom: 20px;
+  }
+
+  .hoejre_grid {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .grid_grid_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: fit-content;
+    margin: auto;
+    padding-bottom: 3rem;
+  }
+
+  .grid_grid_grid img {
+    width: 9vh;
+  }
+}
+
+/* lille tablet */
+@media (min-width: 600px) {
+  .section3_overskrift_contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .grid_contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .venstre_grid {
+    text-align: center;
+  }
+
+  .talk {
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .find {
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .hoejre_grid {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .grid_grid_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: fit-content;
+    margin: auto;
+  }
+
+  .grid_grid_grid img {
+    width: 9vh;
+  }
+}
+
+/* tablet stor*/
+@media (min-width: 800px) {
+  .section3_overskrift_contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .grid_contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .venstre_grid {
+    text-align: center;
+  }
+
+  .find {
+    padding-bottom: 10px;
+  }
+
+  .hoejre_grid {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .grid_grid_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: fit-content;
+    margin: auto;
+    padding-bottom: 3rem;
+  }
+
+  .grid_grid_grid img {
+    width: 9vh;
+  }
+}
+
+/* desktop*/
+@media (min-width: 800px) {
+  .section3_overskrift_contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .grid_contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .venstre_grid {
+    text-align: center;
+  }
+
+  .find {
+    padding-bottom: 10px;
+  }
+
+  .hoejre_grid {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .grid_grid_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: fit-content;
+    margin: auto;
+    padding-bottom: 3rem;
+  }
+
+  .grid_grid_grid img {
+    width: 9vh;
+    padding-bottom: 2rem;
+  }
+}

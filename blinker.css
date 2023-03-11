@@ -1,0 +1,137 @@
+/* heading der blinker i neon */
+.neon-overskrift,
+.neon-text {
+  position: relative;
+  /* -webkit-text-stroke: 0.005em rgba(255, 255, 255, 0.9); */
+  color: transparent;
+  animation: neon 4s infinite;
+}
+.neon-text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0px;
+  -webkit-text-stroke: 0.03em rgba(255, 255, 255, 0.6);
+  filter: blur(0.02em);
+  pointer-events: none;
+}
+
+.neon-text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0px;
+  -webkit-text-stroke: 0.03em rgba(255, 255, 255, 0.6);
+  filter: blur(0.01em);
+  pointer-events: none;
+}
+
+@keyframes neon {
+  0% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  11% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 0.8;
+  }
+  18% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  31% {
+    opacity: 0.92;
+  }
+  33% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.7;
+  }
+  44% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 0.7;
+  }
+  73% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+  }
+  91% {
+    opacity: 0.92;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes neonOn {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  2% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  6% {
+    opacity: 0;
+  }
+  7% {
+    opacity: 1;
+  }
+  9% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  12% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 0.96;
+  }
+  73% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.heading--mg {
+  line-height: 0.78947368em;
+  text-transform: uppercase;
+}

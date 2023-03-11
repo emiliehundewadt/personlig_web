@@ -1,0 +1,717 @@
+* {
+  all: unset;
+
+  display: revert;
+
+  cursor: revert;
+
+  box-sizing: border-box;
+}
+
+/* generelt  */
+
+body {
+  background-color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  -webkit-text-stroke-width: 0.006em;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.9);
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  gap: -10px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  -webkit-text-stroke-width: 0.006em;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.9);
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+/* h3 {
+  font-size: 22px;
+  color: #f8f8ed;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Big Shoulders Text";
+} */
+
+h4 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: ekstralight;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: ekstralight;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Abel", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  word-spacing: 0.1rem;
+  line-height: 1.9rem;
+}
+
+a {
+  font-family: "Abel", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  word-spacing: 0.1rem;
+  line-height: 1.9rem;
+}
+
+/* hero */
+.navn {
+  text-shadow: 0 0 6px rgba(225, 223, 232, 0.142), 0 0 30px rgba(250, 191, 248, 0.1);
+}
+
+.myHeader {
+  display: grid;
+}
+
+.grid_video {
+  grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.banner {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.overskrift {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  display: grid;
+  width: 100%;
+  background-size: cover;
+  grid-column: 1 / span 2;
+  grid-row: 1/5;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+/* GENERELT IMG */
+
+img {
+  width: 100%;
+}
+
+img:hover {
+  filter: saturate(3);
+}
+
+/* section1 */
+
+.border1 {
+  border-style: groove none none none;
+  transform: skewY(9deg);
+  border-color: #d43eb5;
+  border-width: 5px;
+
+  text-shadow: 0 0 6px rgba(43, 15, 156, 0.5), 0 0 30px rgba(255, 255, 255, 0.1);
+}
+.section1 {
+  padding: 50px;
+}
+
+.about {
+  text-shadow: 0 0 6px rgba(225, 223, 232, 0.142), 0 0 30px rgba(250, 191, 248, 0.1);
+}
+.section1 p {
+  color: #f8f8ed;
+}
+
+/* section 2 */
+
+.section2 {
+  text-shadow: 0 0 6px rgba(225, 223, 232, 0.142), 0 0 30px rgba(250, 191, 248, 0.1);
+}
+
+.competences {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding: 15px;
+}
+
+.col_com {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-content: space-between;
+  color: #f8f8ed;
+  padding: 10px;
+}
+
+/* section 3 */
+
+.projects {
+  margin-bottom: 4rem;
+}
+
+.border2 {
+  border-style: none none groove none;
+  transform: skewY(-9deg);
+  border-color: #d43eb5;
+  border-width: 5px;
+  text-shadow: 0 0 6px rgba(43, 15, 156, 0.5), 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.section3_overskrift {
+  text-shadow: 0 0 6px rgba(225, 223, 232, 0.142), 0 0 30px rgba(250, 191, 248, 0.1);
+}
+
+.section3 p {
+  color: #f8f8ed;
+}
+
+/*footer*/
+.footer_container {
+  opacity: 50%;
+  text-align: center;
+  color: #edf0ec;
+  margin-top: 3rem;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center center;
+  max-width: 100px;
+  margin: auto;
+  margin-top: 0px;
+  margin-top: 20px;
+}
+
+.icon1 {
+  padding-top: 8px;
+  width: 5vh;
+}
+
+.icon2 {
+  width: 8vh;
+}
+
+/* Mobilversion */
+@media (max-width: 600px) {
+  .hero {
+    padding-bottom: 4rem;
+  }
+
+  .video {
+    display: none;
+  }
+
+  .navn {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: "Big Shoulders Display", cursive;
+  }
+
+  .overskrift {
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .navn {
+    font-size: 30px;
+  }
+
+  .underoverskrift {
+    font-size: 22px;
+    color: #f8f8ed;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    opacity: 70%;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 500;
+  }
+
+  /* SECTION 1 */
+
+  .section1 {
+    margin-top: 2rem;
+  }
+
+  .about h2 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 2em;
+    font-size: 40px;
+  }
+
+  .section1 img {
+    display: flex;
+    width: 50vh;
+    margin: auto;
+    padding-bottom: 3em;
+  }
+
+  .section1 p {
+    padding-bottom: 3em;
+  }
+
+  /* SECTION 2 */
+
+  .section2 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 10px;
+  }
+
+  .competences h2 {
+    padding-bottom: 3rem;
+    font-size: 37px;
+  }
+
+  .midten {
+    text-align: center;
+  }
+  /* SECTION 3 */
+  .section3 {
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .section3_overskrift h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .col_tekst_bl h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #d43eb5;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 500;
+  }
+
+  .col_tekst_bl {
+    margin-top: 10px;
+    margin-bottom: 4rem;
+  }
+
+  .col_tekst_nb h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #d43eb5;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 500;
+  }
+
+  .col_tekst_nb {
+    margin-top: 10px;
+    margin-bottom: 4rem;
+  }
+
+  .col_tekst_as h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #d43eb5;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 500;
+  }
+
+  .col_tekst_as {
+    margin-top: 10px;
+    margin-bottom: 4rem;
+  }
+
+  .readmore p {
+    padding-top: 2em;
+    text-align: center;
+    color: #d43eb5;
+    opacity: 60%;
+  }
+}
+
+/* tablet lille*/
+@media (min-width: 600px) {
+  .hero {
+    padding-bottom: 4rem;
+  }
+
+  .overskrift {
+    margin: 5rem;
+    margin-top: 20rem;
+  }
+  .navn {
+    font-size: 55px;
+  }
+
+  .underoverskrift {
+    font-size: 34.8px;
+    color: #f8f8ed;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    opacity: 70%;
+  }
+
+  /* SECTION 1 */
+
+  .section1 {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .about {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .section1 img {
+    display: flex;
+    width: 50vh;
+    margin: auto;
+    padding-bottom: 3em;
+  }
+
+  .readmore p {
+    padding-top: 2em;
+    text-align: center;
+    color: #d43eb5;
+    opacity: 60%;
+  }
+
+  /* SECTION 2 */
+
+  .section2 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+  }
+
+  .competences {
+    padding-bottom: 4rem;
+  }
+
+  .midten {
+    text-align: center;
+  }
+
+  /* SECTION 3 */
+
+  .section3 {
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: auto;
+    max-width: 600px;
+  }
+
+  .section3_overskrift {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .col_tekst_bl h3 {
+    margin-bottom: 10px;
+    color: #d43eb5;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  .col_tekst_bl {
+    margin-bottom: 4rem;
+  }
+
+  .col_tekst_nb h3 {
+    margin-bottom: 10px;
+    color: #d43eb5;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  .col_tekst_nb {
+    margin-bottom: 4rem;
+  }
+
+  .col_tekst_as h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #d43eb5;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  .col_tekst_as {
+    margin-top: 10px;
+    margin-bottom: 4rem;
+  }
+}
+
+/* tablet stor*/
+@media (min-width: 800px) {
+  .hero {
+    padding-bottom: 4rem;
+  }
+
+  .overskrift {
+    margin: 5rem;
+    margin-top: 20rem;
+  }
+  .navn {
+    font-size: 60px;
+  }
+
+  .underoverskrift {
+    font-size: 45.8px;
+    color: #f8f8ed;
+  }
+
+  /* SECTION 1  */
+
+  .about {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 5em;
+  }
+
+  .about h2 {
+    font-size: 70px;
+  }
+
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 2rem;
+  }
+
+  .section1 img {
+    width: 50vh;
+  }
+
+  .down p {
+    padding-top: 20px;
+  }
+
+  .readmore {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-column-start: 2;
+    justify-items: center;
+  }
+
+  /* SECTION 2 */
+
+  .section2 {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    padding: 70px;
+  }
+
+  .competences h2 {
+    font-size: 70px;
+  }
+
+  /* SECTION 3 */
+
+  .section3_overskrift h2 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 35px;
+    font-size: 70px;
+  }
+
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 950px;
+  }
+
+  .bl {
+    grid-column-start: 1;
+    padding-bottom: 4em;
+  }
+
+  .col_tekst_nb h3 {
+    padding-bottom: 10px;
+  }
+
+  .nb {
+    grid-column-start: 1;
+    padding-bottom: 4em;
+  }
+
+  .col_tekst_nb {
+    grid-column-start: 2;
+  }
+
+  .readmore3 p {
+    text-align: center;
+    padding-top: 50px;
+    color: #d43eb5;
+  }
+}
+
+/* desktop */
+@media (min-width: 1150px) {
+  .hero {
+    padding-bottom: 10rem;
+  }
+
+  .overskrift {
+    margin: 3rem;
+    margin-top: 20rem;
+    margin-bottom: 8em;
+  }
+  .navn {
+    font-size: 90px;
+  }
+
+  .underoverskrift {
+    font-size: 61px;
+    color: #f8f8ed;
+  }
+
+  /* SECTION 1 */
+
+  .about {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 7em;
+  }
+
+  .about h2 {
+    font-size: 80px;
+  }
+
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding-right: 6rem;
+  }
+
+  .tekst1 {
+    display: grid;
+    place-content: center center;
+    margin-top: -6rem;
+  }
+
+  .section1 img {
+    width: 60vh;
+  }
+
+  .down p {
+    padding-top: 20px;
+  }
+
+  .readmore {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-column-start: 2;
+    justify-items: center;
+  }
+
+  /* SECTION 2 */
+
+  .section2 {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    padding: 7em;
+  }
+
+  /* SECTION 3 */
+
+  .section3_overskrift h2 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 35px;
+    font-size: 70px;
+    padding-top: 2em;
+  }
+
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1160px;
+  }
+
+  .bl {
+    grid-column-start: 1;
+    padding-bottom: 4em;
+  }
+
+  .col_tekst_bl h3 {
+    padding-bottom: 10px;
+    color: #d43eb5;
+  }
+
+  .col_tekst_nb h3 {
+    padding-bottom: 10px;
+    color: #d43eb5;
+  }
+
+  .nb {
+    grid-column-start: 1;
+    padding-bottom: 4em;
+  }
+
+  .as {
+    position: absolute;
+    grid-column-start: 1;
+    order: -1;
+  }
+
+  .col_tekst_as h3 {
+    grid-column-start: 2;
+    color: #d43eb5;
+  }
+}
